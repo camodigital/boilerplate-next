@@ -5,18 +5,16 @@ type Props = {
   title: string
 }
 
-export default function Home({title} : Props) {
+export default function Home({ title }: Props) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{title = '2td'}</title>
+        <title>{(title = '2td')}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          {title}
-        </h1>
+        <h1 className={styles.title}>{title}</h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
