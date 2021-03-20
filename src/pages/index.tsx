@@ -1,17 +1,21 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+type Props = {
+  title: string
+}
+
+export default function Home({title} : Props) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>2td</title>
+        <title>{title = '2td'}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          2td
+          {title}
         </h1>
 
         <p className={styles.description}>
