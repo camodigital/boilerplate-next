@@ -1,6 +1,10 @@
 const Main = () => (
   <main>
-    <h1>React Avançado</h1>
+    <h1>Camo - Boilerplate</h1>
+    <p>
+      A simple project starter to work with TypeScript, React, NextJS and Styled
+      Components
+    </p>
   </main>
 )
 
