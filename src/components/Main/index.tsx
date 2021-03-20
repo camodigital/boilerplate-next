@@ -1,11 +1,13 @@
+import * as S from './styles'
+
 const Main = () => (
-  <main>
+  <S.Wrapper>
     <h1>Camo - Boilerplate</h1>
     <p>
       A simple project starter to work with TypeScript, React, NextJS and Styled
       Components
     </p>
-  </main>
+  </S.Wrapper>
 )
 
 export default Main

@@ -10,4 +10,10 @@ describe('<Main />', () => {
       screen.getByRole('heading', { name: /Camo - Boilerplate/i })
     ).toBeInTheDocument()
   })
+
+  it('should render colors correctly', () => {
+    const { container } = render(<Main />)
+
+    expect(container.firstChild).toHaveStyle({ 'background-color': '#eeeeee' })
+  })
 })
